@@ -1,9 +1,9 @@
 function symmetrical(string) {
-  if (string === '') { return 'Input a string for an output'; }
+  if (string === '') { return 'Input a string for an output' };
   var logic = (previous, char) => {
-    if (previous < 0) { return previous; }
-    if (char === '(') { return ++previous; }
-    if (char === ')') { return --previous; };
+    if (previous < 0) { return previous };
+    if (char === '(') { return ++previous };
+    if (char === ')') { return --previous };
     return previous;
   };
 
